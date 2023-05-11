@@ -61,7 +61,7 @@ function drawWeather(d) {
     localStorage.setItem('temp', fahrenheit);
     localStorage.setItem('humidity', d.list[0].main.humidity);
     localStorage.setItem('wind', d.list[0].wind.speed);
-
+    
 
     // create a for each loop and distribute the data across an array for the 5 day forecast
 
@@ -126,3 +126,4 @@ function buildForecastList(data) {
         el.append(wind[index]);
     });
 }
+localStorage.clear();
